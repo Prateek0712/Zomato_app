@@ -57,10 +57,6 @@ public class Main {
                 ds.assignDriver(u1.od);
                 ds.deliver(u1.od);
             }
-            else
-            {
-
-            }
         }
         else
         {
