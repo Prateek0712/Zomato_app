@@ -10,6 +10,10 @@ public class order {
         User = user;
     }
 
+    public int getBill() {
+        return bill;
+    }
+
     private user User;
     private int bill;
     order(user User)

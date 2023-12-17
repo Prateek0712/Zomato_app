@@ -21,8 +21,11 @@ public class Main {
         DeliveryPartner ds=new DeliveryPartner();
         ds.addDriver(driver1);
         ds.addDriver(driver2);
-        r1.displayMenu();
-        r2.displayMenu();
+        for(int i=0;i<rsList.size();i++)
+        {
+            System.out.println("Restrorant  No: "+(i+1));
+            rsList.get(i).displayMenu();
+        }
         System.out.println("Enter Your Name");
         String us1=sc.nextLine();
         user u1=new user(us1);
@@ -49,6 +52,7 @@ public class Main {
             if(checkF.equals("y"))
             {
                 System.out.println("Thank for order");
+                u1.od.display_TotalOrder();
                 System.out.println("This order is by default COD");
                 ds.assignDriver(u1.od);
                 ds.deliver(u1.od);
