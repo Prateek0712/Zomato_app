@@ -36,11 +36,11 @@ public class Main {
             boolean flag=true;
             while(flag)
             {
-                System.out.println("enter restro number And Order Number ");
+                System.out.println("enter restro number And Dish Number ");
                 int restroNo=sc.nextInt();
                 int dishNo=sc.nextInt();
                 u1.placeOrder(rsList.get(restroNo-1),dishNo);
-                System.out.println("want to order  again type y/n");
+                System.out.println("want to add again type y/n");
                 String  fchoise=sc.next();
                 if(fchoise.equals("n"))
                 {
